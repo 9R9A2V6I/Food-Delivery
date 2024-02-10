@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,700");
+
+.bannerTopContainer{
+  
+}
+
+
+
+.bannnerMainContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.bannerList {
+  list-style: none;
+  width: min(90vw, 51rem);
+  max-width: 51rem;
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding-bottom: 2rem;
+}
+
+.bannerList::-webkit-scrollbar {
+  display: none;
+}
+
+.bannerListItems {
+  flex: 0 0 45vw;
+  max-width: 18rem;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 20rem;
+
+  span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    padding: 0.75em;
+    height: 100%;
+    writing-mode: vertical-lr;
+    text-align: center;
+    transform: rotate(180deg);
+    background-image: linear-gradient(to right, #f44336cc 2%, transparent 60%);
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(0%, -50%);
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(to right, #f44336cc 2%, transparent 60%);
+    z-index: -1;
+  }
+
+  .bannerListImg {
+    display: block;
+    height: 20rem;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0%, -50%);
+    z-index: -2;
+  }
+}
+
+@media (min-width: 53rem) {
+  .bannerListItems:nth-child(1) {
+    left: 0;
+  }
+
+  .bannerListItems:nth-child(2) {
+    left: 2.2rem;
+  }
+
+  .bannerListItems:nth-child(3) {
+    left: 4.4rem;
+  }
+  .bannerListItems:nth-child(4) {
+    left: 6.6rem;
+  }
+
+  /* ... Repeat the pattern for the remaining elements */
+  .bannerListItems:nth-child(16) {
+    left: 30rem;
+  }
+}

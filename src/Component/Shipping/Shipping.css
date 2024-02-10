@@ -1,0 +1,70 @@
+.shippingContainer {
+  background-image: url("../../Assets/template.png");
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+}
+.shippingBox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 90%;
+  height: 100%;
+
+}
+.shippingTextContainer {
+  width: 40%;
+  text-align: left;
+  line-height: 30px;
+
+}
+.reviwBox {
+  border: 2px solid black;
+  width: 200px;
+  height: 200px;
+}
+.shippingtec{ 
+height: 50px;
+font-size: xx-large;
+text-align: left;
+
+}
+.shippingImg{
+height: 140px;
+width: 60px;
+text-align: end;
+
+}
+.testimoniamBox{
+  width: 40%;
+}
+.firstTesti{
+  border: 2px solid black;
+  padding: 10px;
+  text-align: left;
+}
+.testimoniam1st{
+ display: flex;
+flex-direction: row;
+justify-content: space-around;
+align-items: center; 
+width: 300px;
+  
+}
+.secondtxt{
+  height: 100px;
+ 
+  width: -10px;
+  font-size: medium;
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+.testiImg1{
+width: 60px;
+height: 60px;
+border-radius: 50%;
+}

@@ -1,0 +1,12 @@
+.topBarCointainer{
+    background-color: #022930;
+    color: #97a4b4;
+    padding: 1px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-color: red;
+    height: 30px;
+    
+}

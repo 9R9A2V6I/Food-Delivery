@@ -1,0 +1,433 @@
+.menuContainer {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.menuHeaderBar {
+    background-image: url("../../../Assets/back_3.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    width: 100vw;
+}
+
+.menuTxt {
+    text-align: center;
+    color: #000;
+    font-size: 40px;
+    font-weight: 500;
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+.mainMenuContainer {
+    background-color: #000;
+    height: 100%;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.menuItemContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.MenuList {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 50%;
+    list-style: none;
+
+    color: #fff;
+    font-weight: normal;
+    height: 30px;
+    align-items: center;
+    gap: 50px;
+    font-family: 'Playfair Display', serif;
+}
+
+.MenuList li {
+    font-size: 18px;
+    line-height: 26px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: 'PT Sans Narrow', sans-serif;
+    letter-spacing: 4px;
+    cursor: pointer;
+}
+
+.MenuList li:hover {
+    color: #ffc851;
+}
+
+.menuBarCon {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 100%;
+    padding: 20px;
+}
+
+.menuImgContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 160px;
+    height: 250px;
+    margin-right: 120px;
+    margin-bottom: 150px;
+    margin: 80px;
+    color: #fff;
+    font-size: normal;
+    text-align: center;
+    font-family: "PT sans Narrow";
+    line-height: 20px;
+    position: relative;
+}
+
+.menuBarImg {
+    width: 100%;
+    height: 350px;
+    transition: all 1s ease-in-out;
+
+
+}
+
+.menuBarImg:hover {
+    /* animation: rotate 1s linear infinite; */
+    /* ~ */
+    transform: scale(1.1) rotate(30deg);
+}
+
+.pizzaPrice {
+    position: absolute;
+    top: -50px;
+    left: -30px;
+    background: yellow;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    font-family: welcome;
+    font-size: 25px;
+    border: 5px solid #fff;
+    transition: all 0.5s ease-in-out;
+}
+
+.pizzaPrice:hover {
+    box-shadow: 3px 3px 5px 5px #ccc;
+}
+
+.menuText {
+    font-size: larger;
+    font-weight: normal;
+    font-family: "PT sans Narrow";
+}
+
+.menuContainerB {
+    background-image: url("../../../Assets/back_3.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 100vw;
+}
+
+.menuRecipiesCont {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    width: 70%;
+    flex-direction: row;
+    text-align: center;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: large;
+}
+
+.MenrecipiesContent {
+    width: 25%;
+}
+
+.Menurecipietec {
+    height: 40px;
+    font-size: xx-large;
+    text-align: center;
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+.paginationMain {
+    color: #fff;
+    z-index: 4;
+}
+
+.mainLoaderPage {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menuAddCartBtn {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffc851;
+    color: #000;
+    transition: box-shadow 1s ease-in-out;
+    transition: transform 1s ease-in-out;
+    cursor: pointer;
+
+
+}
+
+.menuAddCartBtn:hover {
+    transform: scale(1.1);
+    box-shadow: rgba(240, 222, 85, 0.24) 0px 3px 8px;
+}
+
+.menuAddCartBtn:active {
+    background-color: red;
+}
+
+.loader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+
+    &:after {
+        content: "";
+        width: 4em;
+        height: 4em;
+        background: #39f;
+        border-radius: 50%;
+        position: absolute;
+        transform: scale(0.5);
+        animation: grow 1s cubic-bezier(.14, 0.05, 0.55, 0.5) infinite alternate;
+    }
+
+    span {
+        width: 2em;
+        height: 2em;
+        background: #3b3;
+        border-radius: 50%;
+        margin-right: 2em;
+        position: relative;
+        transform: translateX(7em);
+        animation: move 2s ease-in-out infinite;
+
+        &:before {
+            content: "";
+            width: 2em;
+            height: 2em;
+            background: #39f;
+            border-radius: 50%;
+            position: absolute;
+            left: 3em;
+            transform: translateX(0em);
+            animation: shrink 1s ease-in-out infinite;
+        }
+
+        &:after {
+            content: "";
+            width: 2em;
+            height: 2em;
+            background: #f30;
+            border-radius: 50%;
+            position: absolute;
+            right: 3em;
+            transform: translateX(0em);
+            animation: shrink 1s ease-in-out infinite;
+        }
+    }
+}
+
+@keyframes grow {
+    0% {
+        transform: scale(0.5);
+        background: #f30;
+    }
+
+    50% {
+        transform: scale(1);
+        background: #3b3;
+    }
+}
+
+@keyframes move {
+    0% {
+        transform: translateX(7em);
+    }
+
+    50% {
+        transform: translateX(-5em)
+    }
+}
+
+@keyframes shrink {
+    0% {
+        transform: translateX(0em)
+    }
+
+    50% {
+        transform: translateX(-1em)
+    }
+}
+
+.activeCategory {
+    color: #ffc851;
+}
+
+
+.buttons {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.cart-button {
+    position: relative;
+    outline: 0;
+    background-color: blue;
+    color: #fff;
+    border: none;
+    height: 48px;
+    width: 200px;
+    padding: 10px;
+    border-radius: 10px;
+    line-height: 0px;
+    overflow: hidden;
+    cursor: pointer
+}
+
+.cart-button:focus {
+    outline: none !important
+}
+
+.cart-button .fa-shopping-cart {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: -20%;
+    font-size: 1.8em;
+    transform: translate(-50%, -50%)
+}
+
+.cart-button .fa-square {
+    position: absolute;
+    z-index: 1;
+    top: -20%;
+    left: 53%;
+    font-size: 0.8em;
+    transform: translate(-50%, -50%)
+}
+
+.cart-button span {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    color: #fff;
+    transform: translate(-50%, -50%)
+}
+
+.cart-button span.added {
+    opacity: 0
+}
+
+.cart-button.clicked .fa-shopping-cart {
+    animation: cart 2s ease-in forwards
+}
+
+.cart-button.clicked .fa-square {
+    animation: box 2s ease-in forwards
+}
+
+.cart-button.clicked span.add-to-cart {
+    animation: addcart 2s ease-in forwards
+}
+
+.cart-button.clicked span.added {
+    animation: added 2s ease-in forwards
+}
+
+@keyframes cart {
+    0% {
+        left: -10%
+    }
+
+    40%,
+    60% {
+        left: 50%
+    }
+
+    100% {
+        left: 110%
+    }
+}
+
+@keyframes box {
+
+    0%,
+    40% {
+        top: -20%
+    }
+
+    60% {
+        top: 36%;
+        left: 53%
+    }
+
+    100% {
+        top: 40%;
+        left: 112%
+    }
+}
+
+@keyframes addcart {
+
+    0%,
+    30% {
+        opacity: 1
+    }
+
+    30%,
+    100% {
+        opacity: 0
+    }
+}
+
+@keyframes added {
+
+    0%,
+    80% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+/*Color Loader*/

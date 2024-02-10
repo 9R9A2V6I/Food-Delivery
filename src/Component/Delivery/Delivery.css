@@ -1,0 +1,35 @@
+.diliveryContainer{
+    background-image: url("../../Assets/back_2.png");
+    height: 60vh;
+    width: 100%;
+    display: flex;
+   justify-content: center;
+  align-content: center;
+}
+
+.deliveryImgContainer{
+    display: flex;
+   justify-content: space-around;
+   align-items: center;
+   display: flex;
+   width: 70%;
+   flex-direction: row;
+  text-align: center;
+  font-family: 'Cardo', serif;
+ font-size: large;
+
+
+}
+.deliveryContent{
+    width: 25%;
+   
+}
+.deliverytec{
+    height: 40px;
+    font-size: xx-large;
+   text-align: center;
+   font-family: 'Cardo', serif;
+   font-family: 'Fira Mono', monospace;
+   font-family: 'Kalnia', serif;
+   font-family: 'PT Sans Narrow', sans-serif;
+}
